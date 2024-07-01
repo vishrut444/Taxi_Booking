@@ -23,13 +23,13 @@ public class BookingForm {
     @NotEmpty(message = "Name cannot be empty!")
     @NotBlank(message = "Name cant be blank")//if someone put blank spaces
     @Size(min = 3, max = 20,message = "Invalid name length!")
-    @Pattern(regexp = "^[A-Za-z]+$",message = "Name must contain only alphabet!")
+    @Pattern(regexp = "^[A-Za-z ]+$",message = "Name must contain only alphabet!")
     @Column(length = 30)
     private String name;
 
     @NotEmpty(message = "Source cannot be empty!")
     @NotBlank(message = "Source cant be blank")
-    @Size(min = 4, max = 100,message = "Invalid Source length!")
+    @Size(min = 2, max = 100,message = "Invalid Source length!")
     @Column(length = 100)
     private String source;
 

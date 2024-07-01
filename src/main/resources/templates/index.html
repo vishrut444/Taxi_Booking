@@ -124,6 +124,8 @@
 					<div class="grid_5">
 						<h3>Booking Form</h3>
 
+						<!-- Display flash messages -->
+						<div th:if="${message}" class="alert alert-success" th:text="${message}"></div>
 
 						<form id="bookingForm" th:action=@{bookingform} method="post" th:object="${bookingForm}">
 							<div class="fl1">

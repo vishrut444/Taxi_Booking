@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class BookingFormService {
+
     private final BookingFormRepository bookingFormRepository;
 
     public BookingForm addBooking(BookingForm bookingForm) {
